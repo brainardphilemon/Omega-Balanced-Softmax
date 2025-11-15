@@ -5,7 +5,7 @@ CDG-FL replaces the single global focusing parameter (γ) with **bounded, class-
 
 This repository contains the implementation, experiments, and evaluation pipeline for CDG-FL.
 
-##  Motivation
+## Motivation
 
 Long-tailed datasets suffer because:
 - Head classes dominate training
@@ -18,7 +18,7 @@ Long-tailed datasets suffer because:
 - Using a **piecewise log/linear mapping** to keep γc stable and bounded
 - Applying a **cosine warm-up during early epochs** to avoid optimization collapse
 
-##  Key Idea
+## Key Idea
 
 The focusing factor for each class is:
 
@@ -39,14 +39,12 @@ Final Loss:
 L = −(1 − p_t)^(γ_c(e)) * log(p_t)
 
 
-## 📊 Results
+## Results
 
 Balanced & long‑tailed benchmark results included in paper.
 
-## 📄 Citation
+## Citation
 
-@article{jagati2025cdgfl,
-  title={Class-Dependent Gamma Focal Loss},
-  author={Jagati, Brainard Philemon},
-  year={2025}
-}
+  Class-Dependent Gamma Focal Loss,
+  Jagati Brainard Philemon,
+  year = 2025
